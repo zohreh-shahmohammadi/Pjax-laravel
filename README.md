@@ -5,7 +5,7 @@
 <p>Pjax is a jQuery plugin that uses ajax to speed up the loading time of your pages. It only works by fetching specific pieces of html from the server, and client-
 <hr>
 <br>
-##How to use in LARAVEL
+#Usage
 <hr>
 <span>install pakage in laravel</span>
 <br>
