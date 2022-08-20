@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcom_pjax');
+    return view('Pjax.welcom_pjax');
 });
 Route::get('/pjax', function () {
-    return view('pjax');
+    return view('Pjax.pjax');
 });

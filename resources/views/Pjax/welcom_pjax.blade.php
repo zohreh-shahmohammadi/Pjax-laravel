@@ -1,4 +1,4 @@
-@extends('layout');
+@extends('Pjax.layout');
 @section('content');
 <h1>WELCOME .PJAX</h1>
 <hr>
