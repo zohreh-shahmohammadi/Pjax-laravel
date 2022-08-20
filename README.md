@@ -22,83 +22,80 @@ https://gist.github.com/JeffreyWay/8526696b6f29201c4e33
 ##Next step you must add the \Spatie\Pjax\Middleware\PjaxMiddleware to the kernel.php
 <br>
 // namespace App\Http\kernel.php
+<br>
   protected $middleware = [
  
         \App\Http\Middleware\PjaxMiddleware::class,
     ];
+<hr>
     ##create layout.blade.php
-<h4 >Time : <span style="color: red">{{time()}}</span></h4>
+    <br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery Pjax</title>
+</head>
+<body>
+    <h4 >Time : <span style="color: red">{{time()}}</span></h4>
     <hr>
     <section id="pjax-container">
        @yield('content')
     </section>
+</body>
+</html>
     <br>
+    <hr>
 ##add in layout.php CDN jquery.pjax and jquery
-
+<br>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.pjax/2.0.1/jquery.pjax.min.js"  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <br>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.pjax/2.0.1/jquery.pjax.min.js"  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <br>
 ##add script
+<br>
 <script>
  $(document).pjax('a','#pjax-container');   
 </script>
-<br>
+<hr>
 ##create welcom_pjax.blade.php
 <br>
 @extends('Pjax.layout');
 @section('content');
 <h1>WELCOME .PJAX</h1>
-<hr>
+<br>
 <span>click Link New Page</span>
 <br><br>
 <a href="/pjax">Pjax</a>
 @endsection
-<br>
+<hr>
 ##create pjax.blade.php
 <br>
 @extends('Pjax.layout')
+<br>
 @section('content')
+<br>
 <div>
    <h1 style="color:orange">New Page Pjax With Larvel</h1>
 </div>
-
+<br>
 @endsection
+<hr>
 ##add this route in routes\web.php
+<br>
 Route::get('/', function () {
     return view('Pjax.welcom_pjax');
 });
+<br>
 Route::get('/pjax', function () {
     return view('Pjax.pjax');
 });
-<br>
 
+<hr>
 ##in the end run php artisan serve
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+<hr>
 
 ## Contributing
 
