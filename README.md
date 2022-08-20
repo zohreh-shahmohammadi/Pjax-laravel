@@ -19,9 +19,9 @@ you can use JeffreyWay methods
 https://gist.github.com/JeffreyWay/8526696b6f29201c4e33
 
 <hr>
-##Next step you must add the \Spatie\Pjax\Middleware\PjaxMiddleware to the kernel.php
+##Next step you must add the \App\Http\Middleware\PjaxMiddleware::class to the kernel.php
 <br>
-// namespace App\Http\kernel.php
+//  App\Http\kernel.php
 <br>
   protected $middleware = [
  
@@ -30,29 +30,24 @@ https://gist.github.com/JeffreyWay/8526696b6f29201c4e33
 <hr>
     ##create layout.blade.php
     <br>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jquery Pjax</title>
-</head>
-<body>
+
     <h4 >Time : <span style="color: red">{{time()}}</span></h4>
     <hr>
     <section id="pjax-container">
        @yield('content')
     </section>
-</body>
-</html>
-    <br>
+
+
+    
+<br>
     <hr>
 ##add in layout.php CDN jquery.pjax and jquery
 <br>
+
+
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   <br>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.pjax/2.0.1/jquery.pjax.min.js"  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 <br>
 ##add script
 <br>
@@ -62,6 +57,7 @@ https://gist.github.com/JeffreyWay/8526696b6f29201c4e33
 <hr>
 ##create welcom_pjax.blade.php
 <br>
+
 @extends('Pjax.layout');
 @section('content');
 <h1>WELCOME .PJAX</h1>
@@ -70,6 +66,8 @@ https://gist.github.com/JeffreyWay/8526696b6f29201c4e33
 <br><br>
 <a href="/pjax">Pjax</a>
 @endsection
+
+
 <hr>
 ##create pjax.blade.php
 <br>
