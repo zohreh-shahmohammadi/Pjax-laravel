@@ -5,14 +5,14 @@
 <p>Pjax is a jQuery plugin that uses ajax to speed up the loading time of your pages. It only works by fetching specific pieces of html from the server, and client-
 <hr>
 <br>
-#Usage
+<h2>Usage</h2>
 <hr>
 <span>install pakage in laravel</span>
 <br>
 <span>$ composer require spatie/laravel-pjax</span> 
 <hr>
 <br>
-##Next you must create PjaxMiddleware
+##Next you must create <h3>PjaxMiddleware</h3>
 <br>
 you can use JeffreyWay methods
 <br>
@@ -41,7 +41,7 @@ https://gist.github.com/JeffreyWay/8526696b6f29201c4e33
     
 <br>
     <hr>
-##add in layout.php CDN jquery.pjax and jquery
+##add in layout.php <h4>CDN</h4> <h4>jquery.pjax.min.js</h4> and <h4>jquery.min.js</h4>
 <br>
 
 
