@@ -2,18 +2,13 @@
 
 <h1>A pjax  for Laravel</h1>
 <hr>
-<p>Pjax is a jQuery plugin that uses ajax to speed up the loading time of your pages. It only works by fetching specific pieces of html from the server, and client-side updates are only done on specific parts of the page.</p>
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
+<p>Pjax is a jQuery plugin that uses ajax to speed up the loading time of your pages. It only works by fetching specific pieces of html from the server, and client-
+<hr>
+<br>
+##How to use in LARAVEL
+<hr>
+<span>install pakage in larvel</span>
+$ composer require spatie/laravel-pjax
 ## Learning Laravel
 
 Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
