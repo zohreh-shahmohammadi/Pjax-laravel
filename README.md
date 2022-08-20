@@ -14,7 +14,7 @@
 <br>
 ##Next you must create <h3>PjaxMiddleware</h3>
 <br>
-you can use JeffreyWay methods
+you can use JeffreyWay methods PjaxMiddleware
 <br>
 https://gist.github.com/JeffreyWay/8526696b6f29201c4e33
 
@@ -41,7 +41,7 @@ https://gist.github.com/JeffreyWay/8526696b6f29201c4e33
     
 <br>
     <hr>
-##add in layout.php <h4>CDN</h4> <h4>jquery.pjax.min.js</h4> and <h4>jquery.min.js</h4>
+##add in layout.php CDN jquery.pjax and jquery.min.js <h4>CDN</h4> <h4>jquery.pjax.min.js</h4> and <h4>jquery.min.js</h4>
 <br>
 
 
